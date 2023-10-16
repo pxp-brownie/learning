@@ -19,7 +19,7 @@ closeModal.addEventListener('click',snapModal)
 overlay.addEventListener('click',snapModal)
     
 document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape'){
+    if(e.key === 'Escape' && !modal.classList.contains('hidden')){
         snapModal();
     }
 })
